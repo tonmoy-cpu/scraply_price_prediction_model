@@ -1,0 +1,70 @@
+{
+  "categoricals": {
+    "Category": [
+      "Accessories",
+      "Laptop",
+      "Other",
+      "Refrigerator",
+      "Smartphone",
+      "Television"
+    ],
+    "Brand": [
+      "Acer",
+      "Anker",
+      "Apple",
+      "Asus",
+      "Bosch",
+      "Dell",
+      "Generic",
+      "Godrej",
+      "HP",
+      "Haier",
+      "Hisense",
+      "JBL",
+      "LG",
+      "Lenovo",
+      "Logitech",
+      "MI",
+      "MSI",
+      "Motorola",
+      "Nokia",
+      "OPPO",
+      "OnePlus",
+      "Panasonic",
+      "Philips",
+      "Realme",
+      "Samsung",
+      "Sharp",
+      "Sony",
+      "TCL",
+      "Toshiba",
+      "Vivo",
+      "Vizio",
+      "Whirlpool",
+      "Xiaomi",
+      "boAt"
+    ],
+    "Condition": [
+      "Average",
+      "Broken",
+      "Excellent",
+      "Good",
+      "Poor"
+    ],
+    "BodyType": [
+      "Metal",
+      "Mixed",
+      "Plastic"
+    ]
+  },
+  "numeric_ranges": {
+    "ActualPrice": [
+      813.0,
+      247041.0
+    ],
+    "YearsUsed": [
+      0,
+      13
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Python caches
+*.pyo
+*.pyd
+*.pdb
+
+# Environment files
+*.env
+.envrc
+
+# Model artifacts (optional, if you want to exclude temporary models)
+# Uncomment if you don’t want to track retrained local models
+# model/*.joblib
+# model/*.pkl
+
+# Render / deployment
+*.sqlite3
