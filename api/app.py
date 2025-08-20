@@ -4,6 +4,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 import pandas as pd
 import joblib, os, numpy as np
+from fastapi.middleware.cors import CORSMiddleware
 
 MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(os.path.dirname(__file__), "..", "model", "model.joblib"))
 pipe = None
@@ -11,6 +12,18 @@ if os.path.exists(MODEL_PATH):
     pipe = joblib.load(MODEL_PATH)
 
 app = FastAPI(title="Scraply Price Prediction API", version="1.0.0")
+origins = [
+    "https://turbo-space-giggle-wxw795jxxxg25xwp-3000.app.github.dev",
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # list of allowed origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class PredictIn(BaseModel):
     Category: str
